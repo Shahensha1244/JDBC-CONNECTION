@@ -1,0 +1,114 @@
+package jdbc.ArogyaHospital112;
+
+public class Patient {
+	 private int age,id;    
+	 private String name,gender,city,address,guardian_name,guardian_address,dateOfAdmission;
+	    
+	 private long Aadhar_Card_number,contact_number,guardian_contactNumber;
+	String recovery;
+
+		public int getAge() {
+			return age;
+		}
+
+		public String getRecovery() {
+			return recovery;
+		}
+
+		public void setRecovery(String recovery) {
+			this.recovery = recovery;
+		}
+
+		public void setAge(int age) {
+			this.age = age;
+		}
+
+		public int getId() {
+			return id;
+		}
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public String getGender() {
+			return gender;
+		}
+
+		public void setGender(String gender) {
+			this.gender = gender;
+		}
+
+		public String getCity() {
+			return city;
+		}
+
+		public void setCity(String city) {
+			this.city = city;
+		}
+
+		public String getAddress() {
+			return address;
+		}
+
+		public void setAddress(String address) {
+			this.address = address;
+		}
+
+		public String getGuardian_name() {
+			return guardian_name;
+		}
+
+		public void setGuardian_name(String guardian_name) {
+			this.guardian_name = guardian_name;
+		}
+
+		public String getGuardian_address() {
+			return guardian_address;
+		}
+
+		public void setGuardian_address(String guardian_address) {
+			this.guardian_address = guardian_address;
+		}
+
+		public String getDateOfAdmission() {
+			return dateOfAdmission;
+		}
+
+		public void setDateOfAdmission(String dateOfAdmission) {
+			this.dateOfAdmission = dateOfAdmission;
+		}
+
+		public long getAadhar_Card_number() {
+			return Aadhar_Card_number;
+		}
+
+		public void setAadhar_Card_number(long aadhar_Card_number) {
+			Aadhar_Card_number = aadhar_Card_number;
+		}
+
+		public long getContact_number() {
+			return contact_number;
+		}
+
+		public void setContact_number(long contact_number) {
+			this.contact_number = contact_number;
+		}
+
+		public long getGuardian_contactNumber() {
+			return guardian_contactNumber;
+		}
+
+		public void setGuardian_contactNumber(long guardian_contactNumber) {
+			this.guardian_contactNumber = guardian_contactNumber;
+		}
+
+}

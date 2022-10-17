@@ -1,0 +1,81 @@
+package jdbc.ArogyaHospital112;
+
+public class Arogyahospital {
+	public static void main(String args[]) {
+	DaoInterface dao=new Daolmpl();
+	Patient p=new Patient();
+	
+    p.setId(101);
+    p.setAge(29);
+    p.setName("madar");
+    p.setGender("male");
+    p.setCity("kurnool");
+    p.setAddress("2-448,mandlem");
+    p.setGuardian_name("pakkir");
+    p.setGuardian_address("2-448");
+    p.setDateOfAdmission("01/08/22");	
+    p.setAadhar_Card_number(12345);
+    p.setContact_number(96189);
+    p.setGuardian_contactNumber(770236);
+    
+    p.setId(102);
+    p.setAge(31);
+    p.setName("shaik");
+    p.setGender("male");
+    p.setCity("hyderabad");
+    p.setAddress("2-448,puppalaguda");
+    p.setGuardian_name("usman");
+    p.setGuardian_address("pno 246");
+    p.setDateOfAdmission("01/01/22");	
+    p.setAadhar_Card_number(16566);
+    p.setContact_number(96189656);
+    p.setGuardian_contactNumber(666770236);
+   
+    
+    p.setId(103);
+    p.setAge(22);
+    p.setName("ramu");
+    p.setGender("male");
+    p.setCity("guntur");
+    p.setAddress("2-448,guntur");
+    p.setGuardian_name("usman");
+    p.setGuardian_address("pno 222");
+    p.setDateOfAdmission("01/01/22");	
+    p.setAadhar_Card_number(16566);
+    p.setContact_number(96189656); p.setId(102);
+    p.setAge(31);
+    p.setName("shaik");
+    p.setGender("male");
+    p.setCity("hyderabad");
+    p.setAddress("2-448,puppalaguda");
+    p.setGuardian_name("usman");
+    p.setGuardian_address("pno 246");
+    p.setDateOfAdmission("01/01/22");	
+    p.setAadhar_Card_number(16566);
+    p.setContact_number(96189656);
+    p.setGuardian_contactNumber(91770236);
+   
+   
+    
+      dao.patientRegistration(p);
+    
+   
+	dao.viewAllPatient();
+	
+	 
+	dao.searchPatientById(102);
+	
+	dao.deletePatientById(101);
+	
+	
+	
+	dao.searchPatientByCity("hyderabad");
+	
+	
+	
+	dao.searchPatientByAgeGroup(30, 40);
+	
+	dao.markPatientRecoveryById(102);
+
+	}
+}
